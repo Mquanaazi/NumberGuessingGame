@@ -8,15 +8,15 @@ namespace NumberGuessingGame
 {
     internal class NumberGuessing
     {
-        int numberToGuess = 0;
+        int numberToGuess;
         int minimum;
         int maximum;
       public NumberGuessing(int minimum, int maximum)
         {
 
-            GenerateRandomNumber();
+            GenerateRandomNumber(minimum,maximum);
         }
-        void GenerateRandomNumber()
+        void GenerateRandomNumber(int minimum, int maximum)
         {
             Random rand = new Random();
             numberToGuess=rand.Next(minimum, maximum);

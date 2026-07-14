@@ -1,8 +1,10 @@
 ﻿namespace NumberGuessingGame
 {
+    //This class is the UI definition for the Number Guessing Game.It will ask the user to select a difficulty level, then ask them to guess a number until they get it correct.  It will then ask if they want to play again.
     internal class Program
     {
-        static void Main(string[] args)
+
+        static void Main(string[] args) // The Main method is the entry point of the application. It will run the game loop until the user decides to quit.
         {
             bool gameOver = false;
             bool inputValid = false;
